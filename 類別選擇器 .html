@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <title></title>
     <script src="js/jquery-3.7.1.min.js"></script>
-    
     <style>
         .selProduct{
             background:#cbf2ed;
@@ -12,12 +11,9 @@
     </style>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script>
-        // 按下 [訂購] 鈕執行此函式 
          function fnOrder(){
              var num, product;
-             //取得txtNum文字欄的值
              num = $("#txtNum").val();
-             //取得套用.selProduct類別的欄位值
              product = $(".selProduct").val();             
              alert("您訂購了 " + num + " 個 " + product);
          }
@@ -37,5 +33,4 @@
         <p><input type="button" onclick="fnOrder()" value="訂購"></p>       
     </form>
 </body>
-
 </html>
